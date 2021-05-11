@@ -14,7 +14,7 @@ const dbConfig = require('./config/db.config.js');
 const mongoose = require('mongoose');
 //mongoose.Promise = global.Promise;
 //const MongoClient = require('mongodb').MongoClient;
-const uri = const uri = process.env.MONGODB_URI;
+const uri = process.env.MONGODB_URI;
 //"mongodb+srv://***:***@thproject.iul3v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 // Connecting to the database
