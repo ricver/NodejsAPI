@@ -43,7 +43,9 @@ connection.once('open', () => {
 
 // define a root/default route
 app.get('/', (req, res) => {
-   res.json({"message": "Hello World"});
+   res.json({"message": "
+<B>Restfull CRUD API</B>
+Hello World"});
 });
 
 // Require Users routes
