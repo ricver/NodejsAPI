@@ -49,7 +49,7 @@ connection.once('open', () => {
 //  res.sendfile('default.html', { root: __dirname + "/relative_path_of_file" } );
 //});
 app.get('/', function(req, res){
-    res.redirect('/default.html');
+    res.redirect('default.html');
 });
 
 // Require Users routes
