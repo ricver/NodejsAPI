@@ -49,13 +49,13 @@ string endPoint = @"http:\\myRestService.com\api\";<br>
 var client = new RestClient(endPoint);<br>
 var json = client.MakeRequest();<br>
 </p>
-<b>*</b>Parameter
+<b>*</b>Parameter<br>
 var json = client.MakeRequest("?param=0");<br>
 
-<b>*</b>set the HttpVerb
+<b>*</b>set the HttpVerb<br>
 var client = new RestClient(endpoint: endPoint, method: HttpVerb.POST, postData: "{'someValueToPost': 'The Value being Posted'}");
 
-<br>
+<br><br>
 Get me @ <a href="https://github.com/ricver/C-RestClientLib.git">Github</a>
 <br>
 </body>
