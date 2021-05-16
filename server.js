@@ -45,12 +45,12 @@ connection.once('open', () => {
 //app.get('/', (req, res) => {
 //   res.json({"message": "Hello World"});
 //});
-//app.get('/', function(req, res){
-//  res.sendfile('default.html', { root: __dirname + "/relative_path_of_file" } );
-//});
 app.get('/', function(req, res){
-    res.redirect('default.html');
+  res.sendfile('default.html')//, { root: __dirname + "/relative_path_of_file" } );
 });
+//app.get('/', function(req, res){
+//    res.redirect('/default.html');
+//});
 
 // Require Users routes
 const userRoutes = require('./src/routes/user.routes')
