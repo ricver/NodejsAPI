@@ -42,10 +42,11 @@ connection.once('open', () => {
 
 
 // define a root/default route
-app.get('/', (req, res) => {
-   res.json({"message": "
-<B>Restfull CRUD API</B>
-Hello World"});
+//app.get('/', (req, res) => {
+//   res.json({"message": "Hello World"});
+//});
+app.get('/', function(req, res){
+  res.sendfile('default.html', { root: __dirname + "/relative_path_of_file" } );
 });
 
 // Require Users routes
